@@ -31,7 +31,7 @@ export class OrderService {
       throw new UnavableAddress(`Can't find this addres in addresses DB.`);
     };
 
-    function convertDegreestoRadians(coords: number){  // треба для того, щоб джава коректно обраховувала math. функції (формулу найшов в інеті, коментарі писав не JPT а я для себе)
+    function convertDegreestoRadians(coords: number){
       return coords * Math.PI / 180;
      };
     
